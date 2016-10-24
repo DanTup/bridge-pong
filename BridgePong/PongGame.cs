@@ -49,7 +49,7 @@ namespace BridgePong
 
 		void Tick()
 		{
-			var now = Window.Performance.Now();
+			var now = (int)Window.Performance.Now();
 			Update(now - lastFrame);
 			Draw();
 			lastFrame = now;
